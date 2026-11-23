@@ -6,11 +6,14 @@ Most of what I build follows one thread: find vulnerabilities, fix them, verify 
 
 ## Featured projects
 
-[ad-lab](https://github.com/thyranystrom/ad-lab) — Active Directory attack & detection lab Built a Windows AD domain from scratch, attacked it from Kali (BloodHound, Kerberoasting, password spraying), then detected each attack in the logs — including finding that the right audit policy wasn't enabled. Full write-ups with MITRE ATT&CK mappings and remediation. Next: forwarding logs to Microsoft Sentinel with KQL detection rules.
+**[ad-lab](https://github.com/thyranystrom/ad-lab) — Active Directory attack & detection lab** 
+Built a Windows AD domain from scratch, attacked it from Kali (BloodHound, Kerberoasting, password spraying), then detected each attack in the logs — including finding that the right audit policy wasn't enabled. Full write-ups with MITRE ATT&CK mappings and remediation. Next: forwarding logs to Microsoft Sentinel with KQL detection rules.
 
-[scanner](https://github.com/thyranystrom/scanner) — SAST tool for WooCommerce/WordPress A static analysis tool with AST-based taint analysis and a WordPress-aware rule set (OWASP Top 10). Includes inter-procedural taint tracking, confidence scoring, an auto-fix engine, and CI that fails the build if detection regresses. I also turned it on itself and documented the security bugs it found in its own code.
+**[scanner](https://github.com/thyranystrom/scanner) — SAST tool for WooCommerce/WordPress**
+A static analysis tool with AST-based taint analysis and a WordPress-aware rule set (OWASP Top 10). Includes inter-procedural taint tracking, confidence scoring, an auto-fix engine, and CI that fails the build if detection regresses. I also turned it on itself and documented the security bugs it found in its own code.
 
-[home-lab](https://github.com/thyranystrom/home-lab) — SOC home lab A blue-team lab on Wazuh SIEM: simulating attacks, detecting them, and writing incident reports mapped to MITRE ATT&CK — including a full SQL injection → RCE chain and its remediation.
+**[home-lab](https://github.com/thyranystrom/home-lab) — SOC home lab**
+A blue-team lab on Wazuh SIEM: simulating attacks, detecting them, and writing incident reports mapped to MITRE ATT&CK — including a full SQL injection → RCE chain and its remediation.
 
 ## Currently working on
 - A firewall in C (NFQUEUE) that blocks the attacks from my labs and feeds alerts to Wazuh — low-level packet parsing, fuzz-tested.
